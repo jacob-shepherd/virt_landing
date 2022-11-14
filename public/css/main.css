@@ -79,3 +79,51 @@ button{
     box-shadow: 1px 1px 2px 1px #4c4c4b;
 }
 
+
+a{
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+
+
+
+
+
+/* phone */
+
+@media (max-width: 600px) {
+    div.text-con{
+        text-align: center;
+        margin-top: 0;
+        padding: 10%;
+    }  
+    
+    div.btn-con-1 button{
+        width: 55vw;
+        margin-top: 2vh;
+    }
+
+    a{
+        text-decoration: none;
+        text-decoration-line: none;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+    div.text-con{
+        text-align: center;
+        margin-top: 0;
+        padding: 3%;
+    }  
+    
+    div.btn-con-1 button{
+        width: 25vw;
+        margin-top: 2vh;
+    }
+
+    a{
+        text-decoration: none;
+        text-decoration-line: none;
+    }
+}
