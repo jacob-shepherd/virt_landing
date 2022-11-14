@@ -51,7 +51,7 @@ app.get('*', (req, res) => {
 })
 
 
-const PORT = 4000
+const PORT = 80
 
 
 app.listen(PORT, () => {
