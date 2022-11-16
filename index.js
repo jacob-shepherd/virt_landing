@@ -14,7 +14,7 @@ const { google } = require('googleapis')
 const jwt = require('jsonwebtoken')
 const EmailList = require('./models/email-list')
 
-mongoose.connect(`mongodb+srv://Jacob_Shepherd:${process.env.databseUrl}.@virtconcerts1.5asbb.mongodb.net/landing`, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.databseUrl, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log("CONNECTION OPEN, mongo is working!!!")
     })
@@ -22,7 +22,6 @@ mongoose.connect(`mongodb+srv://Jacob_Shepherd:${process.env.databseUrl}.@virtco
         console.log("OH NO ERROR WITH MONGO!!!!")
         console.log(err)
     })
-
 const app = express();
 
 app.engine('ejs', ejsMate)
